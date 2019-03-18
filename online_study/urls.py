@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from apps.message import views as message_veiws
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('form/', message_veiws.message_form)
 ]
